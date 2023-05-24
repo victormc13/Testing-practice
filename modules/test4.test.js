@@ -9,6 +9,6 @@ describe('capitalize', () => {
     const result = capitalize(input);
 
     //Assert
-    expect(result(input)).toBe('Hello, world!');
+    expect(result).toBe('Hello, world!');
   })
 })
