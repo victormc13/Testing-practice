@@ -12,5 +12,23 @@ describe('stringLength', () => {
     expect(result).toBe(6);
   });
 
-  
+  test('should throw an error if the string is empty', () => {
+    // Arrange
+    const input = '';
+
+    // Act and Assert
+    expect(() => {
+      stringLength(input);
+    }).toThrow('String must contain at least 1 character.');
+  });
+
+  test('should throw an error if the string exceeds 10 characters', () => {
+    // Arrange
+    const input = 'This is a long string.';
+
+    // Act and Assert
+    expect(() => {
+      stringLength(input);
+    }).toThrow('String cannot exceed 10 characters.');
+  });
 });
