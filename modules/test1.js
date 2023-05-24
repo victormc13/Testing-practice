@@ -13,6 +13,3 @@ function stringLength(string) {
 }
 
 module.exports = stringLength;
-
-
-module.exports = stringLength;
