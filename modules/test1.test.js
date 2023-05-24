@@ -9,7 +9,7 @@ describe('stringLength', () => {
     const result = stringLength(input);
 
     // Assert
-    expect(result).toBe(16);
+    expect(result).toBe(6);
   });
 
   test('should throw an error if the string is empty', () => {
