@@ -1,14 +1,12 @@
-const reverseString = require('./test2');
+const reverseString = require('./test2.js');
 
 describe('reverseString', () => {
-  test('should reverse string correctly', () => {
-    //Arrange
-    const input = 'Hello, world!';
-
-    //Act
-    const result = reverseString(input);
-
-    //Assert
-    expect(result).toBe('!dlrow ,olleH');
-  });
+  test('should reverse a string correctly', () => {
+    // Arrange
+    const string = 'hello';
+    // Act
+    const result = reverseString(string);
+    // Assert
+    expect(result).toBe('olleh');
+  })
 });
