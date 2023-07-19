@@ -103,10 +103,10 @@ describe("Calculator", () => {
 
     test("should multiply two negative numbers correctly", () => {
       //Act
-      const result = calculator.multiply(-2, -6);
+      const result = calculator.multiply(-3, -6);
 
       //Assert
-      expect(result).toBe(12);
+      expect(result).toBe(18);
     });
   });
 });

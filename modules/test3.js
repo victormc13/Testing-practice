@@ -1,15 +1,15 @@
 class Calculator {
-  //Sum
+  // Sum
   add(a, b) {
     return a + b;
   }
 
-  //Subtraction
+  // Subtraction
   subtract(a, b) {
     return a - b;
   }
 
-  //Division
+  // Division
   divide(a, b) {
     if (b === 0) {
       throw new Error('Division by zero is not allowed.');
@@ -17,7 +17,7 @@ class Calculator {
     return a / b;
   }
 
-  //Multiplication
+  // Multiplication
   multiply(a, b) {
     return a * b;
   }
