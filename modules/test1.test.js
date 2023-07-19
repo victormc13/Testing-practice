@@ -1,12 +1,12 @@
-const stringLength = require('./test1');
+const stringLength = require('./test1.js');
 
 describe('stringLength', () => {
   test('should return the length of a string correctly', () => {
     // Arrange
-    const input = 'Hello!';
+    const string = 'Hello!';
 
     // Act
-    const result = stringLength(input);
+    const result = stringLength(string);
 
     // Assert
     expect(result).toBe(6);
@@ -14,21 +14,19 @@ describe('stringLength', () => {
 
   test('should throw an error if the string is empty', () => {
     // Arrange
-    const input = '';
-
+    const emptyString = '';
     // Act and Assert
-    expect(() => {
-      stringLength(input);
+    expect(()=> {
+      stringLength(emptyString);
     }).toThrow('String must contain at least 1 character.');
   });
 
   test('should throw an error if the string exceeds 10 characters', () => {
     // Arrange
-    const input = 'This is a long string.';
-
+    const longString = 'This is a long string.';
     // Act and Assert
-    expect(() => {
-      stringLength(input);
+    expect(()=> {
+      stringLength(longString);
     }).toThrow('String cannot exceed 10 characters.');
   });
 });
